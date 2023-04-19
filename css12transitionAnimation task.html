@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           div{
+            height: 200px;
+            width: 200px;
+            background: burlywood;
+            transition:width 2s,height 2s;
+            transition-delay: 1s;
+           }
+           div:hover{
+             width: 300px;
+             height: 400px;
+           }
+           h2{
+               width: 100px;
+               height: 100px;
+               background-color: red;
+               position: relative;
+               animation-name: example;
+               animation-duration: 4s;
+               animation-delay: 2s;
+               animation-iteration-count: 3;
+           }
+           p{
+             background-color: blue;
+             height: 200px;
+             width: 100px;
+             transition: width 2s, height 2s, transform 2s;
+             transition-delay: 2s;
+           }
+           
+            p:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+           
+           @keyframes example{
+            0% {background-color: brown; left: 0px; top: 0px;}
+            25% {background-color: aqua; left: 200px; top: 0px;}
+            34% {background-color: azure; left: 200px; top: 200px;}
+            39% {background-color: blueviolet; left: opx; top: 200px;}
+            42% {background-color: blue; left: 0px; top: opx;}
+
+           }
+
+             
+           
+        </style>
+    </head>
+    <body>
+        <h1>The transition Property</h1>
+
+
+        <div>anagha</div>
+
+
+        <p>Hover over the div element below,to see the transition element</p>
+
+
+        <h2>animation</h2>
+    </body>
+</html>
