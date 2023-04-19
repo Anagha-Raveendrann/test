@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child {
+  color: blue;
+} 
+
+h1 i:first-child {
+  color: blue;
+} 
+
+/* pseudo element: */
+h2::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+h3::first-letter {
+  color: blue;
+  font-size: xx-large;
+}
+
+
+h4.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+} 
+
+h5::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+h5::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+
+::marker { 
+  color: blue;
+  font-size: 23px;
+}
+
+h6::selection {
+  color: red;
+  background: yellow;
+}
+
+</style>
+</head>
+<body>
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+
+
+<h1>I am a <i>strong</i> person. I am a <i>strong</i> person.</h1>
+
+<h1>I am a <i>strong</i> person. I am a <i>strong</i> person.</h1>
+
+
+<h2>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</h2>
+
+<h3>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</h3>
+
+<h4 class="intro">This is an introduction.</h4>
+<h4>This is a paragraph with some text. A bit more text even.</h4>
+
+<h5>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam atque, exercitationem ipsam odit illo recusandae molestias quae quas voluptatem neque nesciunt aperiam. Veritatis, quidem temporibus, iure officia praesentium eveniet dolores corporis minus accusamus reiciendis amet soluta quibusdam, eligendi tempore!</h5>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+
+<h6>Select some text on this page:</h6>
+
+<h6>This is a paragraph.</h6>
+<h6>This is some text in a div element.</h6>
+
+</body>
+</html>
+
+
